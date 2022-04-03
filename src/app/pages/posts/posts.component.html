@@ -4,7 +4,7 @@
 
 
 <app-post *ngFor="let mensaje of mensajes | async"
-            [mensaje]="mensaje"></app-post>
+            [mensaje]="mensaje" (clickPost)="escuchaClick($event)" ></app-post>
 
             <app-post *ngFor="let mensaje of mensajes | async"
             [mensaje]="mensaje"></app-post>
